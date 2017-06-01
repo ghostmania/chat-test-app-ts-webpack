@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>Chat test project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body ng-controller="mainCtrl as vm">
+    <md-content>
+        <section layout="row" layout-align="center center">
+            <md-button class="md-raised md-primary left" ng-click=vm.login()>Login</md-button>
+            <md-button class="md-raised md-primary middle">Chat</md-button>
+            <md-button class="md-raised md-primary right" ng-click="vm.logOut()">Logout</md-button>
+        </section>
+        <heros></heros>
+        <ui-view layout="row" layout-align="center center"></ui-view>
+    </md-content>
+    <div id="fb-root"></div>
+
+    <script src="bundle.js" charset="utf-8"></script>
+</body>
+</html>
